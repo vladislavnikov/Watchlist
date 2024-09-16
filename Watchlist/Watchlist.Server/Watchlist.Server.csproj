@@ -37,8 +37,4 @@
     <ProjectReference Include="..\Watchlist.Core\Watchlist.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
