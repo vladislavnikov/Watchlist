@@ -1,0 +1,6 @@
+@Watchlist.Server_HostAddress = http://localhost:5240
+
+GET {{Watchlist.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
