@@ -11,84 +11,28 @@
       "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\repository\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\repository\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\contracts\\ishowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\contracts\\ishowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.server\\controllers\\directorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\controllers\\directorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.server\\controllers\\showcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\controllers\\showcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.server\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\common\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\common\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\contracts\\imovierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\contracts\\imovierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\repository\\showrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\repository\\showrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\helper\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\helper\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\dtos\\show\\createshowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\dtos\\show\\createshowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\repository\\directorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\repository\\directorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\contracts\\idirectorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\contracts\\idirectorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\dtos\\movie\\moviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\dtos\\movie\\moviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\dtos\\movie\\createmoviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\dtos\\movie\\createmoviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|solutionrelative:watchlist.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.infrastructure\\data\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|solutionrelative:watchlist.infrastructure\\data\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.infrastructure\\data\\models\\mediaitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|solutionrelative:watchlist.infrastructure\\data\\models\\mediaitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.infrastructure\\data\\models\\show.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|solutionrelative:watchlist.infrastructure\\data\\models\\show.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\dtos\\user\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\dtos\\user\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\dtos\\user\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\dtos\\user\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.infrastructure\\data\\models\\usermovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|solutionrelative:watchlist.infrastructure\\data\\models\\usermovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.infrastructure\\data\\models\\usershow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|solutionrelative:watchlist.infrastructure\\data\\models\\usershow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|solutionrelative:watchlist.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.infrastructure\\migrations\\20240917055525_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|solutionrelative:watchlist.infrastructure\\migrations\\20240917055525_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.core\\dtos\\show\\showdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB36D3F0-F0E0-440C-95C3-2460EBE7471A}|Watchlist.Core\\Watchlist.Core.csproj|solutionrelative:watchlist.core\\dtos\\show\\showdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,118 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 275,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MappingProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Helper\\MappingProfiles.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\Helper\\MappingProfiles.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Helper\\MappingProfiles.cs",
-              "RelativeToolTip": "Watchlist.Core\\Helper\\MappingProfiles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T08:06:29.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MovieRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Repository\\MovieRepository.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\Repository\\MovieRepository.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Repository\\MovieRepository.cs",
-              "RelativeToolTip": "Watchlist.Core\\Repository\\MovieRepository.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAMwDcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T08:03:49.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DirectorController.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\DirectorController.cs",
-              "RelativeDocumentMoniker": "Watchlist.Server\\Controllers\\DirectorController.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\DirectorController.cs",
-              "RelativeToolTip": "Watchlist.Server\\Controllers\\DirectorController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAApwB0AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T07:24:33.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DirectorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Repository\\DirectorRepository.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\Repository\\DirectorRepository.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Repository\\DirectorRepository.cs",
-              "RelativeToolTip": "Watchlist.Core\\Repository\\DirectorRepository.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAwwCcAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T08:02:10.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IDirectorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Contracts\\IDirectorRepository.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\Contracts\\IDirectorRepository.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Contracts\\IDirectorRepository.cs",
-              "RelativeToolTip": "Watchlist.Core\\Contracts\\IDirectorRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T07:25:28.737Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 197,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Program.cs",
-              "RelativeDocumentMoniker": "Watchlist.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Program.cs",
-              "RelativeToolTip": "Watchlist.Server\\Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADUAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T12:00:06.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MovieController.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\MovieController.cs",
-              "RelativeDocumentMoniker": "Watchlist.Server\\Controllers\\MovieController.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\MovieController.cs",
-              "RelativeToolTip": "Watchlist.Server\\Controllers\\MovieController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwBsAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T14:47:29.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MovieDto.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\Movie\\MovieDto.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\DTOs\\Movie\\MovieDto.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\Movie\\MovieDto.cs",
-              "RelativeToolTip": "Watchlist.Core\\DTOs\\Movie\\MovieDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T14:43:08.208Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -220,165 +54,99 @@
               "RelativeToolTip": "Watchlist.Server\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-16T11:29:00.458Z",
+              "WhenOpened": "2024-09-17T09:13:02.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Watchlist.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Program.cs",
+              "RelativeToolTip": "Watchlist.Server\\Program.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAMwGUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:12:00.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Messages.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Common\\Messages.cs",
+              "RelativeDocumentMoniker": "Watchlist.Core\\Common\\Messages.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Common\\Messages.cs",
+              "RelativeToolTip": "Watchlist.Core\\Common\\Messages.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:02:54.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShowController.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\ShowController.cs",
+              "RelativeDocumentMoniker": "Watchlist.Server\\Controllers\\ShowController.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\ShowController.cs",
+              "RelativeToolTip": "Watchlist.Server\\Controllers\\ShowController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAiwJQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:02:33.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateShowDto.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\Show\\CreateShowDto.cs",
+              "RelativeDocumentMoniker": "Watchlist.Core\\DTOs\\Show\\CreateShowDto.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\Show\\CreateShowDto.cs",
+              "RelativeToolTip": "Watchlist.Core\\DTOs\\Show\\CreateShowDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T08:53:59.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShowDto.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\Show\\ShowDto.cs",
+              "RelativeDocumentMoniker": "Watchlist.Core\\DTOs\\Show\\ShowDto.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\Show\\ShowDto.cs",
+              "RelativeToolTip": "Watchlist.Core\\DTOs\\Show\\ShowDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T08:53:50.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IMovieRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Contracts\\IMovieRepository.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\Contracts\\IMovieRepository.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Contracts\\IMovieRepository.cs",
-              "RelativeToolTip": "Watchlist.Core\\Contracts\\IMovieRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAdAAAA",
+              "Title": "ShowRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Repository\\ShowRepository.cs",
+              "RelativeDocumentMoniker": "Watchlist.Core\\Repository\\ShowRepository.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Repository\\ShowRepository.cs",
+              "RelativeToolTip": "Watchlist.Core\\Repository\\ShowRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T14:48:26.269Z",
+              "WhenOpened": "2024-09-17T08:52:54.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateMovieDto.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\Movie\\CreateMovieDto.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\DTOs\\Movie\\CreateMovieDto.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\Movie\\CreateMovieDto.cs",
-              "RelativeToolTip": "Watchlist.Core\\DTOs\\Movie\\CreateMovieDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "IShowRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Contracts\\IShowRepository.cs",
+              "RelativeDocumentMoniker": "Watchlist.Core\\Contracts\\IShowRepository.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\Contracts\\IShowRepository.cs",
+              "RelativeToolTip": "Watchlist.Core\\Contracts\\IShowRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T14:43:24.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MediaItem.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\MediaItem.cs",
-              "RelativeDocumentMoniker": "Watchlist.Infrastructure\\Data\\Models\\MediaItem.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\MediaItem.cs",
-              "RelativeToolTip": "Watchlist.Infrastructure\\Data\\Models\\MediaItem.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAiwCIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:44:32.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Watchlist.Server\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Watchlist.Server\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T12:31:37.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\Movie.cs",
-              "RelativeDocumentMoniker": "Watchlist.Infrastructure\\Data\\Models\\Movie.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\Movie.cs",
-              "RelativeToolTip": "Watchlist.Infrastructure\\Data\\Models\\Movie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:50:27.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "20240917055525_initial.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Migrations\\20240917055525_initial.cs",
-              "RelativeDocumentMoniker": "Watchlist.Infrastructure\\Migrations\\20240917055525_initial.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Migrations\\20240917055525_initial.cs",
-              "RelativeToolTip": "Watchlist.Infrastructure\\Migrations\\20240917055525_initial.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T05:55:26.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Watchlist.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Watchlist.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAcwCIAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:40:09.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Show.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\Show.cs",
-              "RelativeDocumentMoniker": "Watchlist.Infrastructure\\Data\\Models\\Show.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\Show.cs",
-              "RelativeToolTip": "Watchlist.Infrastructure\\Data\\Models\\Show.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:55:50.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\User\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\DTOs\\User\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\User\\LoginDto.cs",
-              "RelativeToolTip": "Watchlist.Core\\DTOs\\User\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T12:30:04.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\User\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Watchlist.Core\\DTOs\\User\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Core\\DTOs\\User\\RegisterDto.cs",
-              "RelativeToolTip": "Watchlist.Core\\DTOs\\User\\RegisterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T12:30:14.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserMovie.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\UserMovie.cs",
-              "RelativeDocumentMoniker": "Watchlist.Infrastructure\\Data\\Models\\UserMovie.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\UserMovie.cs",
-              "RelativeToolTip": "Watchlist.Infrastructure\\Data\\Models\\UserMovie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:56:45.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserShow.cs",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\UserShow.cs",
-              "RelativeDocumentMoniker": "Watchlist.Infrastructure\\Data\\Models\\UserShow.cs",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\Models\\UserShow.cs",
-              "RelativeToolTip": "Watchlist.Infrastructure\\Data\\Models\\UserShow.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:56:19.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\vite.config.js",
-              "RelativeDocumentMoniker": "watchlist.client\\vite.config.js",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\vite.config.js",
-              "RelativeToolTip": "watchlist.client\\vite.config.js",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-16T11:10:58.252Z"
+              "WhenOpened": "2024-09-17T08:52:44.24Z",
+              "EditorCaption": ""
             }
           ]
         }

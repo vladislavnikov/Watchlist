@@ -7,6 +7,10 @@
 
         public static string NoDirectors => "No directors found";
         public static string DirectorExists => "Director already exists";
+
+        public static string NoShows => "No shows found";
+        public static string ShowExists => "Show already exists";
+
         public static string NoSameIds => "The Ids should be the same";
     }
 }
