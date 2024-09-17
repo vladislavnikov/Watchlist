@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Watchlist.Core.Contracts;
+using Watchlist.Core.Helper;
+using Watchlist.Core.Repository;
 using Watchlist.Core.Services;
 using Watchlist.Infrastructure.Data.Models;
 
@@ -25,7 +28,6 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 .AddEntityFrameworkStores<ApplicationDbContext>()
 .AddDefaultTokenProviders();
 
-// Set up JWT authentication
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 
 builder.Services.AddAuthentication(options =>
@@ -47,13 +49,12 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// Add the JwtHelper class
 builder.Services.AddScoped<JwtHelper>();
+builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
-// Add controllers
 builder.Services.AddControllers();
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
 
-// Set up CORS if required
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
@@ -93,7 +94,6 @@ using (var scope = app.Services.CreateScope())
     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
     var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
 
-    // Ensure roles are created
     var roles = new[] { "Admin", "User" };
     foreach (var role in roles)
     {
@@ -103,7 +103,6 @@ using (var scope = app.Services.CreateScope())
         }
     }
 
-    // Ensure the Admin user is created
     var adminEmail = "admin@domain.com";
     var adminUser = await userManager.FindByEmailAsync(adminEmail);
     if (adminUser == null)

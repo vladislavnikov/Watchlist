@@ -23,10 +23,16 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<MediaItem>()
-        .UseTptMappingStrategy();  
+        .UseTptMappingStrategy();
 
         modelBuilder.Entity<Movie>().ToTable("Movies");
         modelBuilder.Entity<Show>().ToTable("Shows");
+
+        modelBuilder.Entity<MediaItem>()
+            .HasOne(mi => mi.Director)
+            .WithMany(d => d.MediaItems)
+            .HasForeignKey(mi => mi.DirectorId)
+            .OnDelete(DeleteBehavior.Restrict); 
 
         modelBuilder.Entity<UserMovie>()
             .HasKey(um => new { um.UserId, um.MovieId });

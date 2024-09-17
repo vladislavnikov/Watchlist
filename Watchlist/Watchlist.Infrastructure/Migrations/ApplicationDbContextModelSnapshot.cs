@@ -416,7 +416,7 @@ namespace Watchlist.Infrastructure.Migrations
                     b.HasOne("Watchlist.Infrastructure.Data.Models.Director", "Director")
                         .WithMany("MediaItems")
                         .HasForeignKey("DirectorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Director");

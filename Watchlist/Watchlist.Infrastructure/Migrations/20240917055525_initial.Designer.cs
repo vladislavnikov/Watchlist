@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Watchlist.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240916121132_initial")]
+    [Migration("20240917055525_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -419,7 +419,7 @@ namespace Watchlist.Infrastructure.Migrations
                     b.HasOne("Watchlist.Infrastructure.Data.Models.Director", "Director")
                         .WithMany("MediaItems")
                         .HasForeignKey("DirectorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Director");

@@ -29,7 +29,6 @@ namespace Watchlist.Server.Controllers
 
             if (result.Succeeded)
             {
-                // Assign the "Admin" role to the new user
                 if (await _userManager.AddToRoleAsync(user, "User") == IdentityResult.Success)
                 {
                     return Ok(new { Message = "User registered and assigned 'User' role successfully" });
