@@ -26,7 +26,7 @@ namespace Watchlist.Server.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Movie>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Movie>))] 
         public IActionResult GetMovies()
         {
             var movies = _movieRepository.GetAllMovies();

@@ -53,6 +53,7 @@ builder.Services.AddScoped<JwtHelper>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<IDirectorRepository, DirectorRepository>();
 builder.Services.AddScoped<IShowRepository, ShowRepository>();
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
