@@ -51,6 +51,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddScoped<JwtHelper>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<IDirectorRepository, DirectorRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(typeof(MappingProfiles));

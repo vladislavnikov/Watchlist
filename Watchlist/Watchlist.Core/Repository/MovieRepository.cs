@@ -6,47 +6,47 @@ namespace Watchlist.Core.Repository
 {
     public class MovieRepository : IMovieRepository
     {
-        private readonly ApplicationDbContext context;
-        public MovieRepository(ApplicationDbContext _context)
+        private readonly ApplicationDbContext _context;
+        public MovieRepository(ApplicationDbContext context)
         {
-            context = _context;
+            _context = context;
         }
         public async Task AddMovieToUserCollectionAsync(int movieId, string userId)
         {
-            var user = await context.Users.FindAsync(userId);
-            var movie = await context.Movies.FindAsync(movieId);
+            var user = await _context.Users.FindAsync(userId);
+            var movie = await _context.Movies.FindAsync(movieId);
 
-            context.UserMovies.Add(new UserMovie { UserId = userId, MovieId = movieId });
-            await context.SaveChangesAsync();
+            _context.UserMovies.Add(new UserMovie { UserId = userId, MovieId = movieId });
+            await _context.SaveChangesAsync();
         }
 
         public async Task CreateMovieAsync(Movie model)
         {
-            context.Add(model);
-            await context.SaveChangesAsync();
+            _context.Add(model);
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeleteMovieAsync(int movieId)
         {
-            var movie = await context.Movies.FirstOrDefaultAsync(m => m.Id == movieId);
+            var movie = await _context.Movies.FirstOrDefaultAsync(m => m.Id == movieId);
 
-            context.Movies.Remove(movie);
-            await context.SaveChangesAsync();
+            _context.Movies.Remove(movie);
+            await _context.SaveChangesAsync();
         }
 
         public ICollection<Movie> GetAllMovies()
         {
-            return context.Movies.ToList();
+            return _context.Movies.ToList();
         }
 
         public Movie GetMovie(int movieId)
         {
-            return context.Movies.FirstOrDefault(m => m.Id == movieId);
+            return _context.Movies.FirstOrDefault(m => m.Id == movieId);
         }
 
         public ICollection<Movie> GetUserMovies(string userId)
         {
-            return context.UserMovies
+            return _context.UserMovies
                 .Where(um => um.UserId == userId)
                 .Select(um => um.Movie)
                 .ToList();
@@ -54,18 +54,18 @@ namespace Watchlist.Core.Repository
 
         public bool MovieExistsByTitle(string title)
         {
-            var movie = context.Movies.FirstOrDefault(m => m.Title == title);
+            var movie = _context.Movies.FirstOrDefault(m => m.Title == title);
 
             return movie != null;
         }
 
         public async Task RemoveMovieToUserCollectionAsync(int movieId, string userId)
         {
-            var userMovie = await context.UserMovies
+            var userMovie = await _context.UserMovies
                 .FirstOrDefaultAsync(um => um.UserId == userId && um.MovieId == movieId);
 
-            context.UserMovies.Remove(userMovie);
-            await context.SaveChangesAsync();
+            _context.UserMovies.Remove(userMovie);
+            await _context.SaveChangesAsync();
         }
 
         public async Task UpdateMovieAsync(int movieId, Movie model)
@@ -78,7 +78,7 @@ namespace Watchlist.Core.Repository
             movieToUpdate.ImageUrl = model.ImageUrl;
             movieToUpdate.Genre = model.Genre;
 
-            await context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
     }
 }
