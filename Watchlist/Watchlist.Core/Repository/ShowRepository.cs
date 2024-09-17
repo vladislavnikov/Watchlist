@@ -35,12 +35,16 @@ namespace Watchlist.Core.Repository
 
         public ICollection<Show> GetAllShows()
         {
-            return _context.Shows.ToList();
+            return _context.Shows
+                .Include(d => d.Director)
+                .ToList();
         }
 
         public Show GetShow(int showId)
         {
-            return _context.Shows.FirstOrDefault(m => m.Id == showId);
+            return _context.Shows
+                .Include(d => d.Director)
+                .FirstOrDefault(m => m.Id == showId);
         }
 
         public ICollection<Show> GetUserShows(string userId)
@@ -62,7 +66,8 @@ namespace Watchlist.Core.Repository
 
         public bool ShowExistsByTitle(string title)
         {
-            var show = _context.Shows.FirstOrDefault(m => m.Title == title);
+            var show = _context.Shows
+                .FirstOrDefault(m => m.Title == title);
 
             return show != null;
         }
@@ -73,6 +78,7 @@ namespace Watchlist.Core.Repository
 
             showToUpdate.Title = model.Title;
             showToUpdate.Description = model.Description;
+            showToUpdate.DirectorId = model.DirectorId;
             showToUpdate.ReleaseYear = model.ReleaseYear;
             showToUpdate.ImageUrl = model.ImageUrl;
             showToUpdate.Seasons = model.Seasons;

@@ -11,13 +11,22 @@ namespace Watchlist.Core.Helper
     {
         public MappingProfiles() 
         {
-            CreateMap<Movie, MovieDto>().ReverseMap();
+            CreateMap<Movie, MovieDto>()
+            .ForMember(dest => dest.DirectorName, opt => opt.MapFrom(src => src.Director.Name)) 
+            .ForMember(dest => dest.Genre, opt => opt.MapFrom(src => src.Genre.ToString())) 
+            .ReverseMap();
+
+            CreateMap<Movie, UpdateMovieDto>().ReverseMap();
             CreateMap<Movie, CreateMovieDto>().ReverseMap();
 
             CreateMap<Director, DirectorDto>().ReverseMap();
             CreateMap<Director, CreateDirectorDto>().ReverseMap();
 
-            CreateMap<Show, ShowDto>().ReverseMap();
+            CreateMap<Show, ShowDto>()
+                .ForMember(dest => dest.DirectorName, opt => opt.MapFrom(src => src.Director.Name))
+                .ReverseMap();
+
+            CreateMap<Show, UpdateShowDto>().ReverseMap();
             CreateMap<Show, CreateShowDto>().ReverseMap();
 
             CreateMap<Review, ReviewDto>().ReverseMap();

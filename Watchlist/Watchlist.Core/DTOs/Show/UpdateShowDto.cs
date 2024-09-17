@@ -1,6 +1,6 @@
 ﻿namespace Watchlist.Core.DTOs.Show
 {
-    public class ShowDto
+    public class UpdateShowDto
     {
         public int Id { get; set; }
 
@@ -8,7 +8,7 @@
 
         public string Description { get; set; } = null!;
 
-        public string DirectorName { get; set; }
+        public int DirectorId { get; set; }
 
         public int ReleaseYear { get; set; }
 

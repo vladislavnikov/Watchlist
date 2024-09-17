@@ -11,7 +11,6 @@ namespace Watchlist.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class ShowController : Controller
     {
         private readonly IMapper mapper;
@@ -27,7 +26,7 @@ namespace Watchlist.Server.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<ShowDto>))]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Show>))]
         public IActionResult GetShows()
         {
             var shows = showRepository.GetAllShows();
@@ -89,7 +88,6 @@ namespace Watchlist.Server.Controllers
         }
 
         [HttpPost("create")]
-        [Authorize(Roles = "Admin")]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         public async Task<IActionResult> CreateShow([FromBody] CreateShowDto showModel)
@@ -112,7 +110,6 @@ namespace Watchlist.Server.Controllers
         }
 
         [HttpPut("{showId}")]
-        [Authorize(Roles = "Admin")]
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
@@ -135,7 +132,6 @@ namespace Watchlist.Server.Controllers
         }
 
         [HttpDelete("{showId}")]
-        [Authorize(Roles = "Admin")]
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]

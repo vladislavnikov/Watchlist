@@ -28,7 +28,8 @@ namespace Watchlist.Core.Repository
 
         public async Task DeleteMovieAsync(int movieId)
         {
-            var movie = await _context.Movies.FirstOrDefaultAsync(m => m.Id == movieId);
+            var movie = await _context.Movies
+                .FirstOrDefaultAsync(m => m.Id == movieId);
 
             _context.Movies.Remove(movie);
             await _context.SaveChangesAsync();
@@ -36,12 +37,16 @@ namespace Watchlist.Core.Repository
 
         public ICollection<Movie> GetAllMovies()
         {
-            return _context.Movies.ToList();
+            return _context.Movies
+                .Include(d => d.Director)
+                .ToList();
         }
 
         public Movie GetMovie(int movieId)
         {
-            return _context.Movies.FirstOrDefault(m => m.Id == movieId);
+            return _context.Movies
+                .Include(d => d.Director)
+                .FirstOrDefault(m => m.Id == movieId);
         }
 
         public ICollection<Movie> GetUserMovies(string userId)
@@ -54,7 +59,8 @@ namespace Watchlist.Core.Repository
 
         public bool MovieExistsByTitle(string title)
         {
-            var movie = _context.Movies.FirstOrDefault(m => m.Title == title);
+            var movie = _context.Movies
+                .FirstOrDefault(m => m.Title == title);
 
             return movie != null;
         }
@@ -76,6 +82,7 @@ namespace Watchlist.Core.Repository
             movieToUpdate.Description = model.Description;
             movieToUpdate.ReleaseYear = model.ReleaseYear;
             movieToUpdate.ImageUrl = model.ImageUrl;
+            movieToUpdate.DirectorId = model.DirectorId;
             movieToUpdate.Genre = model.Genre;
 
             await _context.SaveChangesAsync();

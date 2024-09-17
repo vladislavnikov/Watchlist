@@ -31,6 +31,7 @@ namespace Watchlist.Server.Controllers
         {
             var movies = _movieRepository.GetAllMovies();
             var movieDtos = _mapper.Map<List<MovieDto>>(movies);
+            //
 
             if (movieDtos == null)
             {
@@ -47,6 +48,7 @@ namespace Watchlist.Server.Controllers
         {
             var movie = _movieRepository.GetMovie(movieId);
             var movieDto = _mapper.Map<MovieDto>(movie);
+            //
 
             if (!ModelState.IsValid)
             {
@@ -112,7 +114,7 @@ namespace Watchlist.Server.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
-        public async Task<IActionResult> UpdateMovie(int movieId, [FromBody] MovieDto updatedMovie)
+        public async Task<IActionResult> UpdateMovie(int movieId, [FromBody] UpdateMovieDto updatedMovie)
         {
             if (updatedMovie == null)
             {

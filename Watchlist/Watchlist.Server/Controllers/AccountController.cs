@@ -12,9 +12,9 @@ namespace Watchlist.Server.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly JwtHelper _jwtHelper;
+        private readonly JwtService _jwtHelper;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, JwtHelper jwtHelper)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, JwtService jwtHelper)
         {
             _userManager = userManager;
             _signInManager = signInManager;

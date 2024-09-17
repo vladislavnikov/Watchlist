@@ -10,7 +10,7 @@ namespace Watchlist.Core.DTOs.Movie
 
         public string Description { get; set; } = null!;
 
-        public int DirectorId { get; set; }
+        public string DirectorName { get; set; }
 
         public int ReleaseYear { get; set; }
 
@@ -18,6 +18,6 @@ namespace Watchlist.Core.DTOs.Movie
 
         public string ImageUrl { get; set; }
 
-        public Genre Genre { get; set; }
+        public string Genre { get; set; }
     }
 }

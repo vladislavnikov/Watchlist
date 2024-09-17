@@ -1,6 +1,8 @@
-﻿namespace Watchlist.Core.DTOs.Show
+﻿using Watchlist.Infrastructure.Data.Models.Enums;
+
+namespace Watchlist.Core.DTOs.Movie
 {
-    public class ShowDto
+    public class UpdateMovieDto
     {
         public int Id { get; set; }
 
@@ -8,12 +10,14 @@
 
         public string Description { get; set; } = null!;
 
-        public string DirectorName { get; set; }
+        public int DirectorId { get; set; }
 
         public int ReleaseYear { get; set; }
 
+        public int DurationMins { get; set; }
+
         public string ImageUrl { get; set; }
 
-        public int Seasons { get; set; }
+        public Genre Genre { get; set; }
     }
 }

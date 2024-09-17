@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Watchlist.Core.Services
 {
-    public class JwtHelper
+    public class JwtService
     {
         private readonly IConfiguration _configuration;
 
-        public JwtHelper(IConfiguration configuration)
+        public JwtService(IConfiguration configuration)
         {
             _configuration = configuration;
         }
