@@ -1,49 +1,42 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+import Home from './Pages/Home';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 import './App.css';
 
-function App() {
-    const [forecasts, setForecasts] = useState();
+const App = () => {
+    const [currentUser, setCurrentUser] = useState(null);
 
     useEffect(() => {
-        populateWeatherData();
-    }, []);
+        const user = localStorage.getItem('user');
+        if (user) {
+            setCurrentUser(JSON.parse(user));
+        }
+    }, currentUser);
 
-    const contents = forecasts === undefined
-        ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
-        : <table className="table table-striped" aria-labelledby="tabelLabel">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                {forecasts.map(forecast =>
-                    <tr key={forecast.date}>
-                        <td>{forecast.date}</td>
-                        <td>{forecast.temperatureC}</td>
-                        <td>{forecast.temperatureF}</td>
-                        <td>{forecast.summary}</td>
-                    </tr>
-                )}
-            </tbody>
-        </table>;
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        setCurrentUser(null);
+        window.location.href = '/';
+    };
 
     return (
-        <div>
-            <h1 id="tabelLabel">Weather forecast</h1>
-            <p>This component demonstrates fetching data from the server.</p>
-            {contents}
-        </div>
+        <Router>
+            <Header currentUser={currentUser} onLogout={handleLogout} />
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/login" element={<Login setCurrentUser={setCurrentUser} />} />
+                    <Route path="/register" element={<Register />} />
+                </Routes>
+            </main>
+            <Footer/>
+        </Router>
     );
-    
-    async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
-        const data = await response.json();
-        setForecasts(data);
-    }
-}
+};
 
 export default App;
+
