@@ -6,6 +6,8 @@ import Home from './Pages/Home';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import './App.css';
+import MovieList from './Components/MovieList';
+import ShowList from './Components/ShowList';
 
 const App = () => {
     const [currentUser, setCurrentUser] = useState(null);
@@ -29,6 +31,8 @@ const App = () => {
             <main>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/movies" element={<MovieList />} />
+                    <Route path="/shows" element={<ShowList />} />
                     <Route path="/login" element={<Login setCurrentUser={setCurrentUser} />} />
                     <Route path="/register" element={<Register />} />
                 </Routes>
