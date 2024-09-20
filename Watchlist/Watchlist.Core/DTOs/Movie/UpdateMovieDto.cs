@@ -18,6 +18,6 @@ namespace Watchlist.Core.DTOs.Movie
 
         public string ImageUrl { get; set; }
 
-        public Genre Genre { get; set; }
+        public string Genre { get; set; }
     }
 }

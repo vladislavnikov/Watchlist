@@ -25,7 +25,7 @@ const Header = ({ currentUser, onLogout }) => {
                         </>
                     ) : (
                         <>
-                            <li>Hello, {currentUser.username} ({currentUser.role})</li>
+                            <li>Hello, {currentUser.username}</li>
                             <li><a href="#" onClick={onLogout}>Logout</a></li>
                         </>
                     )}

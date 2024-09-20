@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import './Auth.css'
 
 const Register = () => {
@@ -7,6 +8,7 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [message, setMessage] = useState('');
+    const navigate = useNavigate();
 
     const handleRegister = async (e) => {
         e.preventDefault();
@@ -22,6 +24,7 @@ const Register = () => {
             if (response.ok) {
                 const data = await response.json();
                 setMessage(data.Message);
+                navigate("/login");
             } else {
                 const errMsg = await response.text();
                 setError(errMsg);

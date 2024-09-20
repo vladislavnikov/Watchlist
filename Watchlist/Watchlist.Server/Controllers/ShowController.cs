@@ -113,7 +113,7 @@ namespace Watchlist.Server.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
-        public async Task<IActionResult> UpdateShow(int showId, [FromBody] ShowDto updatedShow)
+        public async Task<IActionResult> UpdateShow([FromBody] UpdateShowDto updatedShow)
         {
             if (updatedShow == null)
             {
@@ -126,7 +126,7 @@ namespace Watchlist.Server.Controllers
             }
 
             var Show = mapper.Map<Show>(updatedShow);
-            await showRepository.UpdateShowAsync(showId, Show);
+            await showRepository.UpdateShowAsync(updatedShow.Id, Show);
 
             return NoContent();
         }

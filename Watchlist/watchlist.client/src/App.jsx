@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import './App.css';
 import MovieList from './Components/MovieList';
 import ShowList from './Components/ShowList';
+import CenteredContent from './Components/CenteredContent'; // Import the new component
 
 const App = () => {
     const [currentUser, setCurrentUser] = useState(null);
@@ -28,19 +29,18 @@ const App = () => {
     return (
         <Router>
             <Header currentUser={currentUser} onLogout={handleLogout} />
-            <main>
+            <CenteredContent>
                 <Routes>
+                    <Route path="/movies" element={<MovieList currentUser = { currentUser } />} />
+                    <Route path="/shows" element={<ShowList currentUser={currentUser} />} />
                     <Route path="/" element={<Home />} />
-                    <Route path="/movies" element={<MovieList />} />
-                    <Route path="/shows" element={<ShowList />} />
                     <Route path="/login" element={<Login setCurrentUser={setCurrentUser} />} />
                     <Route path="/register" element={<Register />} />
                 </Routes>
-            </main>
-            <Footer/>
+            </CenteredContent>
+            <Footer />
         </Router>
     );
 };
 
 export default App;
-

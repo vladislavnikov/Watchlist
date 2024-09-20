@@ -114,7 +114,7 @@ namespace Watchlist.Server.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
-        public async Task<IActionResult> UpdateMovie(int movieId, [FromBody] UpdateMovieDto updatedMovie)
+        public async Task<IActionResult> UpdateMovie([FromBody] UpdateMovieDto updatedMovie)
         {
             if (updatedMovie == null)
             {
@@ -127,7 +127,7 @@ namespace Watchlist.Server.Controllers
             }
 
             var movie = _mapper.Map<Movie>(updatedMovie);
-            await _movieRepository.UpdateMovieAsync(movieId, movie);
+            await _movieRepository.UpdateMovieAsync(updatedMovie.Id, movie);
 
             return NoContent();
         }
