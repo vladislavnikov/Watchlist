@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './Lists.css'
+import React, { useEffect, useState } from 'react';
+import './Lists.css';
 import UpdateShowModal from '../Modals/UpdateShowModal';
 
 const ShowList = ({ currentUser }) => {
@@ -8,12 +8,20 @@ const ShowList = ({ currentUser }) => {
     const [error, setError] = useState(null);
     const [selectedShow, setSelectedShow] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [isUpdated, setIsUpdated] = useState(false); 
+    const [isUpdated, setIsUpdated] = useState(false);
 
     useEffect(() => {
         const fetchShows = async () => {
             try {
-                const response = await fetch('/api/Show');
+                const user = JSON.parse(localStorage.getItem('user'));
+                const token = user?.Token;
+
+                const response = await fetch('/api/Show', {
+                    headers: {
+                        'Authorization': `Bearer ${token}`, 
+                        'Content-Type': 'application/json',
+                    }
+                });
                 if (!response.ok) {
                     throw new Error('Failed to fetch shows');
                 }
@@ -27,7 +35,7 @@ const ShowList = ({ currentUser }) => {
         };
 
         fetchShows();
-    }, [isUpdated]);  
+    }, [isUpdated]);
 
     const handleUpdate = (showId) => {
         const showToUpdate = shows.find(show => show.id === showId);
@@ -44,7 +52,7 @@ const ShowList = ({ currentUser }) => {
         setShows(prevShows =>
             prevShows.map(show => show.id === updatedShow.id ? updatedShow : show)
         );
-        setIsUpdated(prev => !prev); 
+        setIsUpdated(prev => !prev);
         handleModalClose();
     };
 
@@ -58,13 +66,19 @@ const ShowList = ({ currentUser }) => {
 
     const handleDelete = async (showId) => {
         try {
+            const token = currentUser.token;
+
             const response = await fetch(`/api/Show/${showId}`, {
                 method: 'DELETE',
+                headers: {
+                    'Authorization': `Bearer ${token}`,  
+                },
             });
             if (!response.ok) {
                 throw new Error('Failed to delete show');
             }
             setShows(shows.filter(show => show.id !== showId));
+            alert('Show deleted!');
         } catch (err) {
             console.error(err);
             setError('Failed to delete show');
@@ -73,13 +87,17 @@ const ShowList = ({ currentUser }) => {
 
     const handleAddToCollection = async (showId) => {
         try {
+            const token = currentUser.token;
+
             const response = await fetch('/api/Show/add', {
                 method: 'POST',
                 headers: {
+                    'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ showId }),
+                body: JSON.stringify(showId),
             });
+
             if (!response.ok) {
                 throw new Error('Failed to add show to collection');
             }
@@ -135,10 +153,8 @@ const ShowList = ({ currentUser }) => {
                     onClose={handleModalClose}
                 />
             )}
-
         </div>
     );
 };
-
 
 export default ShowList;

@@ -70,13 +70,13 @@ namespace Watchlist.Server.Controllers
         }
 
         [HttpPost("add")]
-        public async Task<IActionResult> AddShowToUser(int showId)
+        public async Task<IActionResult> AddShowToUser([FromBody] int showId)
         {
             var user = await userManager.GetUserAsync(User);
             await showRepository.AddShowToUserCollectionAsync(showId, user.Id);
-
             return Ok();
         }
+
 
         [HttpPost("remove")]
         public async Task<IActionResult> RemoveShowFromUser(int showId)

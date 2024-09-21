@@ -13,6 +13,9 @@ const MovieList = ({ currentUser }) => {
     useEffect(() => {
         const fetchMovies = async () => {
             try {
+                const user = JSON.parse(localStorage.getItem('user'));
+                const token = user?.Token;
+
                 const response = await fetch('/api/Movie');
                 if (!response.ok) {
                     throw new Error('Failed to fetch movies');
@@ -55,6 +58,50 @@ const MovieList = ({ currentUser }) => {
     if (error) {
         return <div>Error: {error}</div>;
     }
+
+    const handleDelete = async (movieId) => {
+        try {
+            const token = currentUser.token;
+
+            const response = await fetch(`/api/Movie/${movieId}`, {
+                method: 'DELETE',
+                headers: {
+                    'Authorization': `Bearer ${token}`,  
+                },
+            });
+            if (!response.ok) {
+                throw new Error('Failed to delete movie');
+            }
+            setMovies(movies.filter(movie => movie.id !== movieId));
+            alert('Movie deleted!');
+        } catch (err) {
+            console.error(err);
+            setError('Failed to delete movie');
+        }
+    };
+
+    const handleAddToCollection = async (movieId) => {
+        try {
+            const token = currentUser.token;
+
+            const response = await fetch('/api/Movie/add', {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(movieId),
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to add show to collection');
+            }
+            alert('Movie added to your collection!');
+        } catch (err) {
+            console.error(err);
+            setError('Failed to add movie to collection');
+        }
+    };
 
     return (
         <div>

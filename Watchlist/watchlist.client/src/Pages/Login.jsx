@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Auth.css'
+import './Auth.css';
 
 const Login = ({ setCurrentUser }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [token, setToken] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
@@ -21,11 +22,9 @@ const Login = ({ setCurrentUser }) => {
 
             if (response.ok) {
                 const data = await response.json();
-                setCurrentUser({ username: data.Username, role: data.Role });
-                console.log(data.Username);
-                console.log(data.Role);
+                setCurrentUser({ token: data.token, username: data.Username, role: data.Role });
                 localStorage.setItem('user', JSON.stringify(data)); 
-                navigate('/'); 
+                navigate('/');
             } else {
                 const errMsg = await response.text();
                 setError(errMsg);
@@ -36,7 +35,7 @@ const Login = ({ setCurrentUser }) => {
     };
 
     return (
-        <div className = "auth-container" >
+        <div className="auth-container">
             <div className="auth-box">
                 <h2>Login</h2>
                 <form onSubmit={handleLogin}>
@@ -58,7 +57,7 @@ const Login = ({ setCurrentUser }) => {
                     {error && <p>{error}</p>}
                 </form>
             </div>
-        </div >
+        </div>
     );
 };
 

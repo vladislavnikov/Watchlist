@@ -71,7 +71,7 @@ namespace Watchlist.Server.Controllers
         }
 
         [HttpPost("add")]
-        public async Task<IActionResult> AddMovieToUser(int movieId)
+        public async Task<IActionResult> AddMovieToUser([FromBody] int movieId)
         {
             var user = await _userManager.GetUserAsync(User);
             await _movieRepository.AddMovieToUserCollectionAsync(movieId, user.Id);
