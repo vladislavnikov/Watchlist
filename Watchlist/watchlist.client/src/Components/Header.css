@@ -6,28 +6,24 @@ header {
     padding: 1rem;
 }
 
-/* Main navigation bar */
 nav {
     display: flex;
-    justify-content: space-between; /* Space between left and right parts */
+    justify-content: space-between; 
     align-items: center;
 }
 
-/* Left side (logo, Movies, Shows) */
 .nav-left {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-/* Logo styling */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
 }
 
-/* Movies and Shows links */
 .nav-left p {
     color: white;
     cursor: pointer;
@@ -35,14 +31,12 @@ nav {
     margin: 0;
 }
 
-/* Right side (Login, Register, Logout) */
 .nav-right {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-/* Navigation links (Login, Register, Logout) */
 .nav-links {
     list-style: none;
     display: flex;

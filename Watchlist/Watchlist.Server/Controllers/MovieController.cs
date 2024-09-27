@@ -62,7 +62,7 @@ namespace Watchlist.Server.Controllers
         [ProducesResponseType(200, Type = typeof(IEnumerable<MovieDto>))]
         [ProducesResponseType(400)]
         public async Task<IActionResult> GetUserMovies()
-        {
+         {
             var user = await _userManager.GetUserAsync(User);
             var movies = _movieRepository.GetUserMovies(user.Id);
             var movieDtos = _mapper.Map<List<MovieDto>>(movies);
@@ -80,7 +80,7 @@ namespace Watchlist.Server.Controllers
         }
 
         [HttpPost("remove")]
-        public async Task<IActionResult> RemoveMovieFromUser(int movieId)
+        public async Task<IActionResult> RemoveMovieFromUser([FromBody] int movieId)
         {
             var user = await _userManager.GetUserAsync(User);
             await _movieRepository.RemoveMovieToUserCollectionAsync(movieId, user.Id);

@@ -24,7 +24,7 @@ const Login = ({ setCurrentUser }) => {
                 const data = await response.json();
                 setCurrentUser({ token: data.token, username: data.Username, role: data.Role });
                 localStorage.setItem('user', JSON.stringify(data)); 
-                navigate('/');
+                navigate('/saved');
             } else {
                 const errMsg = await response.text();
                 setError(errMsg);

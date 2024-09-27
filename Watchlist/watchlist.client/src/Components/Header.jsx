@@ -5,15 +5,15 @@ import './Header.css';
 const Header = ({ currentUser, onLogout }) => {
     const navigate = useNavigate();
 
-    const handleLogoClick = () => {
-        navigate('/');
-    };
-
     return (
         <header>
             <nav>
                 <div className="nav-left">
-                    <div className="logo" onClick={handleLogoClick}>Watchlist</div>
+                    {currentUser ? (
+                        <div className="logo" onClick={() => navigate('/saved')}>Watchlist</div>
+                    ) : (
+                        <div className="logo" onClick={() => navigate('/')}>Watchlist</div>
+                    )}
                     <p onClick={() => navigate('/movies')}>Movies</p>
                     <p onClick={() => navigate('/shows')}>Shows</p>
                 </div>

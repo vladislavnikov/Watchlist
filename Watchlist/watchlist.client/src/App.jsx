@@ -9,6 +9,7 @@ import './App.css';
 import MovieList from './Components/MovieList';
 import ShowList from './Components/ShowList';
 import CenteredContent from './Components/CenteredContent';
+import UserLists from './Components/UserLists';
 
 const App = () => {
     const [currentUser, setCurrentUser] = useState(null);
@@ -33,7 +34,8 @@ const App = () => {
                 <Routes>
                     <Route path="/movies" element={<MovieList currentUser={currentUser} />} />
                     <Route path="/shows" element={<ShowList currentUser={currentUser} />} />
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home currentUser={currentUser} />} />
+                    <Route path="/saved" element={<UserLists currentUser={currentUser} />} />
                     <Route path="/login" element={<Login setCurrentUser={setCurrentUser} />} />
                     <Route path="/register" element={<Register />} />
                 </Routes>

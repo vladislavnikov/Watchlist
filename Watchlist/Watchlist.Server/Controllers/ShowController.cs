@@ -79,7 +79,7 @@ namespace Watchlist.Server.Controllers
 
 
         [HttpPost("remove")]
-        public async Task<IActionResult> RemoveShowFromUser(int showId)
+        public async Task<IActionResult> RemoveShowFromUser([FromBody] int showId)
         {
             var user = await userManager.GetUserAsync(User);
             await showRepository.RemoveShowToUserCollectionAsync(showId, user.Id);
