@@ -51,6 +51,7 @@ namespace Watchlist.Core.Repository
         {
             return _context.UserShows
                 .Where(um => um.UserId == userId)
+                .Include(um => um.Show.Director)
                 .Select(um => um.Show)
                 .ToList();
         }

@@ -3,14 +3,14 @@ import './Modals.css';
 
 const UpdateMovieModal = ({ movie, onUpdate, onClose }) => {
     const [formData, setFormData] = useState({
-        id: movie.id || "",
-        title: movie.title || "",
-        description: movie.description || "",
-        directorId: movie.directorId || "",
-        releaseYear: movie.releaseYear || "",
-        durationMins: movie.durationMins || "",
-        imageUrl: movie.imageUrl || "",
-        genre: movie.genre || ""
+        id: movie?.id || "",
+        title: movie?.title || "",
+        description: movie?.description || "",
+        directorId: movie?.directorId || "",
+        releaseYear: movie?.releaseYear || "",
+        durationMins: movie?.durationMins || "",
+        imageUrl: movie?.imageUrl || "",
+        genre: movie?.genre || ""
     });
 
     const [error, setError] = useState(null);
@@ -37,9 +37,7 @@ const UpdateMovieModal = ({ movie, onUpdate, onClose }) => {
             });
 
             if (response.status === 204) {
-                if (onUpdate) {
-                    onUpdate(formData);
-                }
+                onUpdate(formData);
             } else if (response.status === 404) {
                 setError('Movie not found.');
             } else {
@@ -50,12 +48,18 @@ const UpdateMovieModal = ({ movie, onUpdate, onClose }) => {
         }
     };
 
+    const handleOverlayClick = (e) => {
+        if (e.target.className === 'modal-overlay') {
+            onClose();
+        }
+    };
+
     return (
-        <div className="modal">
-            <div onClick={onClose} className="overlay"></div>
+        <div className="modal-overlay" onClick={handleOverlayClick}>
             <div className="modal-content">
-                <h2>Update Movie</h2>
+                <button className="close-modal" onClick={onClose}>X</button>
                 <form onSubmit={handleSubmit}>
+                    <h2>Update Movie</h2>
                     <div>
                         <label>Title</label>
                         <input
@@ -129,9 +133,6 @@ const UpdateMovieModal = ({ movie, onUpdate, onClose }) => {
                     {error && <p className="error">{error}</p>}
                     <button className="submit-modal" type="submit">Update</button>
                 </form>
-                <button className="close-modal" onClick={onClose}>
-                    CLOSE
-                </button>
             </div>
         </div>
     );

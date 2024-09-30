@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Lists.css';
+import InfoShowModal from '../Modals/InfoShowModal';
 import UpdateShowModal from '../Modals/UpdateShowModal';
 
 const ShowList = ({ currentUser }) => {
@@ -7,21 +8,14 @@ const ShowList = ({ currentUser }) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [selectedShow, setSelectedShow] = useState(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
+    const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
     const [isUpdated, setIsUpdated] = useState(false);
 
     useEffect(() => {
         const fetchShows = async () => {
             try {
-                const user = JSON.parse(localStorage.getItem('user'));
-                const token = user?.Token;
-
-                const response = await fetch('/api/Show', {
-                    headers: {
-                        'Authorization': `Bearer ${token}`, 
-                        'Content-Type': 'application/json',
-                    }
-                });
+                const response = await fetch('/api/Show');
                 if (!response.ok) {
                     throw new Error('Failed to fetch shows');
                 }
@@ -37,14 +31,25 @@ const ShowList = ({ currentUser }) => {
         fetchShows();
     }, [isUpdated]);
 
-    const handleUpdate = (showId) => {
-        const showToUpdate = shows.find(show => show.id === showId);
-        setSelectedShow(showToUpdate);
-        setIsModalOpen(true);
+    const handleCardClick = (showId) => {
+        setSelectedShow(showId);
+        setIsInfoModalOpen(true);  
     };
 
-    const handleModalClose = () => {
-        setIsModalOpen(false);
+    const handleInfoModalClose = () => {
+        setIsInfoModalOpen(false);
+        setSelectedShow(null);
+    };
+
+    const handleUpdateClick = (e, showId) => {
+        e.stopPropagation();  
+        const showToUpdate = shows.find(show => show.id === showId);
+        setSelectedShow(showToUpdate);
+        setIsUpdateModalOpen(true);
+    };
+
+    const handleUpdateModalClose = () => {
+        setIsUpdateModalOpen(false);
         setSelectedShow(null);
     };
 
@@ -53,25 +58,17 @@ const ShowList = ({ currentUser }) => {
             prevShows.map(show => show.id === updatedShow.id ? updatedShow : show)
         );
         setIsUpdated(prev => !prev);
-        handleModalClose();
+        handleUpdateModalClose();  
     };
 
-    if (loading) {
-        return <div>Loading shows...</div>;
-    }
-
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
-
-    const handleDelete = async (showId) => {
+    const handleDelete = async (e, showId) => {
+        e.stopPropagation();  
         try {
-            const token = currentUser.token;
-
+            const token = currentUser?.token;
             const response = await fetch(`/api/Show/${showId}`, {
                 method: 'DELETE',
                 headers: {
-                    'Authorization': `Bearer ${token}`,  
+                    'Authorization': `Bearer ${token}`,
                 },
             });
             if (!response.ok) {
@@ -85,7 +82,8 @@ const ShowList = ({ currentUser }) => {
         }
     };
 
-    const handleAddToCollection = async (showId) => {
+    const handleAddToCollection = async (e,showId) => {
+        e.stopPropagation();  
         try {
             const token = currentUser.token;
 
@@ -108,6 +106,14 @@ const ShowList = ({ currentUser }) => {
         }
     };
 
+    if (loading) {
+        return <div>Loading shows...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
+
     return (
         <div>
             {shows.length === 0 ? (
@@ -115,7 +121,7 @@ const ShowList = ({ currentUser }) => {
             ) : (
                 <ul className="media-card">
                     {shows.map((show) => (
-                        <li key={show.id}>
+                        <li key={show.id} onClick={() => handleCardClick(show.id)}>
                             <img src={show.imageUrl} alt={show.title} />
                             <h3>{show.title}</h3>
                             <p>Broadcaster: {show.directorName}</p>
@@ -126,18 +132,18 @@ const ShowList = ({ currentUser }) => {
                                     <>
                                         <button
                                             className="delete-button"
-                                            onClick={() => handleDelete(show.id)}
+                                            onClick={(e) => handleDelete(e, show.id)}
                                         >Delete</button>
                                         <button
                                             className="update-button"
-                                            onClick={() => handleUpdate(show.id)}
+                                            onClick={(e) => handleUpdateClick(e, show.id)}
                                         >Update</button>
                                     </>
                                 )}
                                 {currentUser && (
                                     <button
                                         className="add-button"
-                                        onClick={() => handleAddToCollection(show.id)}
+                                        onClick={(e) => handleAddToCollection(e, show.id)}
                                     >Add to Collection</button>
                                 )}
                             </div>
@@ -146,11 +152,18 @@ const ShowList = ({ currentUser }) => {
                 </ul>
             )}
 
-            {isModalOpen && selectedShow && (
+            {isInfoModalOpen && selectedShow && (
+                <InfoShowModal
+                    showId={selectedShow}
+                    onClose={handleInfoModalClose}
+                />
+            )}
+
+            {isUpdateModalOpen && selectedShow && (
                 <UpdateShowModal
                     show={selectedShow}
                     onUpdate={handleShowUpdate}
-                    onClose={handleModalClose}
+                    onClose={handleUpdateModalClose}
                 />
             )}
         </div>

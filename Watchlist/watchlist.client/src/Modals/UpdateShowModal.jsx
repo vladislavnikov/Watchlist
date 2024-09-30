@@ -49,12 +49,18 @@ const UpdateShowModal = ({ show, onUpdate, onClose }) => {
         }
     };
 
+    const handleOverlayClick = (e) => {
+        if (e.target.className === 'modal-overlay') {
+            onClose();
+        }
+    };
+
     return (
-        <div className="modal">
-            <div onClick={onClose} className="overlay"></div>
+        <div className="modal-overlay" onClick={handleOverlayClick}>
             <div className="modal-content">
-                <h2>Update Show</h2>
+                <button className="close-modal" onClick={onClose}>X</button>
                 <form onSubmit={handleSubmit}>
+                    <h2>Update Show</h2>
                     <div>
                         <label>Title</label>
                         <input
@@ -118,9 +124,6 @@ const UpdateShowModal = ({ show, onUpdate, onClose }) => {
                     {error && <p className="error">{error}</p>}
                     <button className="submit-modal" type="submit">Update</button>
                 </form>
-                <button className="close-modal" onClick={onClose}>
-                    CLOSE
-                </button>
             </div>
         </div>
     );

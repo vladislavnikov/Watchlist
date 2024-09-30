@@ -1,12 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import '../Components/Lists.css';
+import InfoMovieModal from '../Modals/InfoMovieModal';
+import InfoShowModal from '../Modals/InfoShowModal';
 
-const Home = ({ currentUser }) => {
+const UserList = ({ currentUser }) => {
     const [movies, setMovies] = useState([]);
     const [shows, setShows] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [isUpdated, setIsUpdated] = useState(false);
+
+    const [selectedMovie, setSelectedMovie] = useState(null);
+    const [selectedShow, setSelectedShow] = useState(null);
+
+    const [isMovieModalOpen, setIsMovieModalOpen] = useState(false);
+    const [isShowModalOpen, setIsShowModalOpen] = useState(false);
 
     useEffect(() => {
         const fetchMovies = async () => {
@@ -52,7 +60,7 @@ const Home = ({ currentUser }) => {
         };
 
         fetchData();
-    }, [isUpdated]); 
+    }, [isUpdated]);
 
     const handleRemoveMovie = async (movieId) => {
         try {
@@ -68,12 +76,12 @@ const Home = ({ currentUser }) => {
             });
 
             if (!response.ok) {
-                throw new Error('Failed remove movie from your collection!');
+                throw new Error('Failed to remove movie from your collection!');
             }
 
             setIsUpdated(prev => !prev);
         } catch (err) {
-            console.error('Error removing movie from your collection!:', err);
+            console.error('Error removing movie from your collection:', err);
         }
     };
 
@@ -87,17 +95,37 @@ const Home = ({ currentUser }) => {
                     'Content-Type': 'application/json',
                     Authorization: `Bearer ${token}`,
                 },
-                body: JSON.stringify(showId), 
+                body: JSON.stringify(showId),
             });
 
             if (!response.ok) {
-                throw new Error('Failed remove show from your collection!');
+                throw new Error('Failed to remove show from your collection!');
             }
 
             setIsUpdated(prev => !prev);
         } catch (err) {
-            console.error('Error removing show from your collection!:', err);
+            console.error('Error removing show from your collection:', err);
         }
+    };
+
+    const handleMovieClick = (movieId) => {
+        setSelectedMovie(movieId);
+        setIsMovieModalOpen(true);
+    };
+
+    const handleShowClick = (showId) => {
+        setSelectedShow(showId);
+        setIsShowModalOpen(true);
+    };
+
+    const closeMovieModal = () => {
+        setIsMovieModalOpen(false);
+        setSelectedMovie(null);
+    };
+
+    const closeShowModal = () => {
+        setIsShowModalOpen(false);
+        setSelectedShow(null);
     };
 
     if (loading) {
@@ -121,7 +149,7 @@ const Home = ({ currentUser }) => {
                     {movies.length === 0 ? <p>No movies found.</p> : (
                         <ul className="media-card">
                             {movies.map((movie) => (
-                                <li key={movie.id}>
+                                <li key={movie.id} onClick={() => handleMovieClick(movie.id)}>
                                     <img src={movie.imageUrl} alt={movie.title} />
                                     <h3>{movie.title}</h3>
                                     <p>Director: {movie.directorName}</p>
@@ -130,7 +158,10 @@ const Home = ({ currentUser }) => {
                                     <div className="button-group">
                                         <button
                                             className="delete-button"
-                                            onClick={() => handleRemoveMovie(movie.id)}
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                handleRemoveMovie(movie.id);
+                                            }}
                                         >
                                             Remove from Collection
                                         </button>
@@ -144,7 +175,7 @@ const Home = ({ currentUser }) => {
                     {shows.length === 0 ? <p>No shows found.</p> : (
                         <ul className="media-card">
                             {shows.map((show) => (
-                                <li key={show.id}>
+                                <li key={show.id} onClick={() => handleShowClick(show.id)}>
                                     <img src={show.imageUrl} alt={show.title} />
                                     <h3>{show.title}</h3>
                                     <p>Broadcaster: {show.directorName}</p>
@@ -153,7 +184,10 @@ const Home = ({ currentUser }) => {
                                     <div className="button-group">
                                         <button
                                             className="delete-button"
-                                            onClick={() => handleRemoveShow(show.id)}
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                handleRemoveShow(show.id);
+                                            }}
                                         >
                                             Remove from Collection
                                         </button>
@@ -164,8 +198,22 @@ const Home = ({ currentUser }) => {
                     )}
                 </div>
             )}
+
+            {isMovieModalOpen && selectedMovie && (
+                <InfoMovieModal
+                    movieId={selectedMovie}
+                    onClose={closeMovieModal}
+                />
+            )}
+
+            {isShowModalOpen && selectedShow && (
+                <InfoShowModal
+                    showId={selectedShow}
+                    onClose={closeShowModal}
+                />
+            )}
         </>
     );
 };
 
-export default Home;
+export default UserList;

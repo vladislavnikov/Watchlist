@@ -48,7 +48,6 @@ namespace Watchlist.Server.Controllers
         {
             var movie = _movieRepository.GetMovie(movieId);
             var movieDto = _mapper.Map<MovieDto>(movie);
-            //
 
             if (!ModelState.IsValid)
             {

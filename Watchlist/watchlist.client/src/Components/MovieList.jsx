@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import './Lists.css';
+import InfoMovieModal from '../Modals/InfoMovieModal';
 import UpdateMovieModal from '../Modals/UpdateMovieModal';
 
 const MovieList = ({ currentUser }) => {
     const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [selectedMovie, setSelectedMovie] = useState(null); 
-    const [isModalOpen, setIsModalOpen] = useState(false);    
-    const [isUpdated, setIsUpdated] = useState(false); 
+    const [selectedMovie, setSelectedMovie] = useState(null);
+    const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
+    const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
+    const [isUpdated, setIsUpdated] = useState(false);
 
     useEffect(() => {
         const fetchMovies = async () => {
             try {
-                const user = JSON.parse(localStorage.getItem('user'));
-                const token = user?.Token;
-
                 const response = await fetch('/api/Movie');
                 if (!response.ok) {
                     throw new Error('Failed to fetch movies');
@@ -32,15 +31,26 @@ const MovieList = ({ currentUser }) => {
         fetchMovies();
     }, [isUpdated]);
 
-    const handleUpdate = (movieId) => {
-        const movieToUpdate = movies.find(movie => movie.id === movieId);
-        setSelectedMovie(movieToUpdate);  
-        setIsModalOpen(true);              
+    const handleCardClick = (movieId) => {
+        setSelectedMovie(movieId);
+        setIsInfoModalOpen(true);  
     };
 
-    const handleModalClose = () => {
-        setIsModalOpen(false);
-        setSelectedMovie(null);          
+    const handleInfoModalClose = () => {
+        setIsInfoModalOpen(false);
+        setSelectedMovie(null);
+    };
+
+    const handleUpdateClick = (e, movieId) => {
+        e.stopPropagation();  
+        const movieToUpdate = movies.find(movie => movie.id === movieId);
+        setSelectedMovie(movieToUpdate);
+        setIsUpdateModalOpen(true);  
+    };
+
+    const handleUpdateModalClose = () => {
+        setIsUpdateModalOpen(false);
+        setSelectedMovie(null);
     };
 
     const handleMovieUpdate = (updatedMovie) => {
@@ -48,25 +58,17 @@ const MovieList = ({ currentUser }) => {
             prevMovies.map(movie => movie.id === updatedMovie.id ? updatedMovie : movie)
         );
         setIsUpdated(prev => !prev);
-        handleModalClose();               
+        handleUpdateModalClose();
     };
 
-    if (loading) {
-        return <div>Loading movies...</div>;
-    }
-
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
-
-    const handleDelete = async (movieId) => {
+    const handleDelete = async (e, movieId) => {
+        e.stopPropagation();  
         try {
-            const token = currentUser.token;
-
+            const token = currentUser?.token;
             const response = await fetch(`/api/Movie/${movieId}`, {
                 method: 'DELETE',
                 headers: {
-                    'Authorization': `Bearer ${token}`,  
+                    'Authorization': `Bearer ${token}`,
                 },
             });
             if (!response.ok) {
@@ -80,10 +82,10 @@ const MovieList = ({ currentUser }) => {
         }
     };
 
-    const handleAddToCollection = async (movieId) => {
+    const handleAddToCollection = async (e, movieId) => {
+        e.stopPropagation();  
         try {
             const token = currentUser.token;
-
             const response = await fetch('/api/Movie/add', {
                 method: 'POST',
                 headers: {
@@ -94,7 +96,7 @@ const MovieList = ({ currentUser }) => {
             });
 
             if (!response.ok) {
-                throw new Error('Failed to add show to collection');
+                throw new Error('Failed to add movie to collection');
             }
             alert('Movie added to your collection!');
         } catch (err) {
@@ -103,6 +105,14 @@ const MovieList = ({ currentUser }) => {
         }
     };
 
+    if (loading) {
+        return <div>Loading movies...</div>;
+    }
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
+
     return (
         <div>
             {movies.length === 0 ? (
@@ -110,7 +120,7 @@ const MovieList = ({ currentUser }) => {
             ) : (
                 <ul className="media-card">
                     {movies.map((movie) => (
-                        <li key={movie.id}>
+                        <li key={movie.id} onClick={() => handleCardClick(movie.id)}>
                             <img src={movie.imageUrl} alt={movie.title} />
                             <h3>{movie.title}</h3>
                             <p>Director: {movie.directorName}</p>
@@ -121,18 +131,18 @@ const MovieList = ({ currentUser }) => {
                                     <>
                                         <button
                                             className="delete-button"
-                                            onClick={() => handleDelete(movie.id)}
+                                            onClick={(e) => handleDelete(e, movie.id)}
                                         >Delete</button>
                                         <button
                                             className="update-button"
-                                            onClick={() => handleUpdate(movie.id)}
+                                            onClick={(e) => handleUpdateClick(e, movie.id)}
                                         >Update</button>
                                     </>
                                 )}
                                 {currentUser && (
                                     <button
                                         className="add-button"
-                                        onClick={() => handleAddToCollection(movie.id)}
+                                        onClick={(e) => handleAddToCollection(e, movie.id)}
                                     >Add to Collection</button>
                                 )}
                             </div>
@@ -141,11 +151,18 @@ const MovieList = ({ currentUser }) => {
                 </ul>
             )}
 
-            {isModalOpen && selectedMovie && (
+            {isInfoModalOpen && selectedMovie && (
+                <InfoMovieModal
+                    movieId={selectedMovie}
+                    onClose={handleInfoModalClose}
+                />
+            )}
+
+            {isUpdateModalOpen && selectedMovie && (
                 <UpdateMovieModal
                     movie={selectedMovie}
-                    onUpdate={handleMovieUpdate}  
-                    onClose={handleModalClose}
+                    onUpdate={handleMovieUpdate}
+                    onClose={handleUpdateModalClose}
                 />
             )}
         </div>

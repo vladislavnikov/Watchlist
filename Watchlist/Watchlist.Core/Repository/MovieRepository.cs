@@ -52,9 +52,10 @@ namespace Watchlist.Core.Repository
         public ICollection<Movie> GetUserMovies(string userId)
         {
             return _context.UserMovies
-                .Where(um => um.UserId == userId)
-                .Select(um => um.Movie)
-                .ToList();
+              .Where(um => um.UserId == userId)
+              .Include(um => um.Movie.Director)
+              .Select(um => um.Movie)
+              .ToList();
         }
 
         public bool MovieExistsByTitle(string title)

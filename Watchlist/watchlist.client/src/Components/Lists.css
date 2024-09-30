@@ -77,3 +77,114 @@
     flex-direction: column;
     gap: 10px;
 }
+
+/* Modal wrapper */
+.modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 60% !important; /* Adjust width as needed */
+    max-width: 800px !important; /* Limit max width */
+    background-color: white !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    z-index: 1000 !important; /* Ensure it's on top */
+    padding: 20px !important;
+}
+
+/* Overlay behind modal */
+.overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    z-index: 999 !important;
+}
+
+/* Close button inside the modal */
+/*.modal-content .close-button {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    background: #ff4d4d !important;
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 50% !important;
+    color: white !important;
+    cursor: pointer !important;
+}*/
+
+/* Modal wrapper */
+/*.modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 60% !important;
+    max-width: 800px !important;
+    background-color: transparent !important;*/ /* No background color */
+    /*border-radius: 10px !important;
+    z-index: 1000 !important;
+    padding: 20px !important;
+    display: flex;*/ /* Flexbox to align content */
+    /*gap: 20px;
+    align-items: center;*/ /* Align vertically */
+/*}*/
+
+/* Overlay behind modal */
+/*.overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    z-index: 999 !important;
+}*/
+
+/* Close button */
+/*.modal-content .close-button {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    background: #ff4d4d !important;
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 50% !important;
+    color: white !important;
+    cursor: pointer !important;
+}*/
+
+/* Flexbox layout for image and text */
+/* Modal wrapper */
+/*.modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 60% !important;
+    max-width: 800px !important;
+    background-color: transparent !important;*/ /* No background color */
+    /*border-radius: 10px !important;
+    z-index: 1000 !important;
+    padding: 20px !important;
+    display: flex;*/ /* Flexbox for layout */
+    /*justify-content: space-between;*/ /* Space between text and image */
+    /*align-items: center;*/ /* Vertical alignment */
+/*}*/
+
+/* Overlay behind modal */
+/*.overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    z-index: 999 !important;
+}*/
+
+
