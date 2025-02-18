@@ -9,14 +9,14 @@ const Home = ({ currentUser }) => {
         if (currentUser) {
             navigate('/saved');
         }
-    }, [currentUser, navigate]); 
+    }, [currentUser, navigate]);
 
     return (
         <>
-                <div>
-                    <h1>Welcome to the Home Page</h1>
-                    <p>This is the main page of the application.</p>
-                </div>
+            <div>
+                <h1>Welcome to the Home Page</h1>
+                <p>This is the main page of the application.</p>
+            </div>
         </>
     );
 };

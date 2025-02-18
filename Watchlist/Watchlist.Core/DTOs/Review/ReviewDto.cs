@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using Watchlist.Infrastructure.Data.Models;
+﻿using Watchlist.Infrastructure.Data.Models;
 
 namespace Watchlist.Core.DTOs.Review
 {

@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{432005D8-B6D1-4AF7-B7C6-12A872AFA9FC}|Watchlist.Infrastructure\\Watchlist.Infrastructure.csproj|solutionrelative:watchlist.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.client\\src\\components\\reviewlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|solutionrelative:watchlist.client\\src\\components\\reviewlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.client\\src\\modals\\infomodals.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|solutionrelative:watchlist.client\\src\\modals\\infomodals.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.client\\src\\components\\lists.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|solutionrelative:watchlist.client\\src\\components\\lists.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.client\\src\\modals\\infomoviemodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|solutionrelative:watchlist.client\\src\\modals\\infomoviemodal.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.client\\src\\components\\userlists.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|solutionrelative:watchlist.client\\src\\components\\userlists.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.client\\src\\components\\movielist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{26258554-4AAC-45E2-9572-3D7BF86BAF99}|watchlist.client\\watchlist.client.esproj|solutionrelative:watchlist.client\\src\\components\\movielist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|c:\\users\\vladislav\\documents\\github\\watchlist\\watchlist\\watchlist.server\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4715A610-572B-4FDF-97AA-53E3D67D9C6C}|Watchlist.Server\\Watchlist.Server.csproj|solutionrelative:watchlist.server\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 551,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\appsettings.json",
-              "RelativeDocumentMoniker": "Watchlist.Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\appsettings.json",
-              "RelativeToolTip": "Watchlist.Server\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-30T13:20:30.999Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Watchlist.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Watchlist.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T13:43:42.529Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Watchlist.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Program.cs",
+              "RelativeToolTip": "Watchlist.Server\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAHQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T11:40:05.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Watchlist.Server\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Watchlist.Server\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T13:54:37.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MovieList.jsx",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Components\\MovieList.jsx",
+              "RelativeDocumentMoniker": "watchlist.client\\src\\Components\\MovieList.jsx",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Components\\MovieList.jsx",
+              "RelativeToolTip": "watchlist.client\\src\\Components\\MovieList.jsx",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAQwKwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-10-01T14:58:01.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "Watchlist.Server\\Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\Watchlist.Server\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "Watchlist.Server\\Controllers\\ReviewController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAxwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:55:00.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "InfoModals.css",
               "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Modals\\InfoModals.css",
               "RelativeDocumentMoniker": "watchlist.client\\src\\Modals\\InfoModals.css",
               "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Modals\\InfoModals.css",
               "RelativeToolTip": "watchlist.client\\src\\Modals\\InfoModals.css",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAABQAAAAPAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-30T13:20:06.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T10:42:33.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Lists.css",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Components\\Lists.css",
-              "RelativeDocumentMoniker": "watchlist.client\\src\\Components\\Lists.css",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Components\\Lists.css",
-              "RelativeToolTip": "watchlist.client\\src\\Components\\Lists.css",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-30T13:20:03.501Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "InfoMovieModal.jsx",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Modals\\InfoMovieModal.jsx",
+              "RelativeDocumentMoniker": "watchlist.client\\src\\Modals\\InfoMovieModal.jsx",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Modals\\InfoMovieModal.jsx",
+              "RelativeToolTip": "watchlist.client\\src\\Modals\\InfoMovieModal.jsx",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-10-01T10:42:15.205Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserLists.jsx",
-              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Components\\UserLists.jsx",
-              "RelativeDocumentMoniker": "watchlist.client\\src\\Components\\UserLists.jsx",
-              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Components\\UserLists.jsx",
-              "RelativeToolTip": "watchlist.client\\src\\Components\\UserLists.jsx",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAAANsAAAAAAAAA",
+              "Title": "ReviewList.jsx",
+              "DocumentMoniker": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Components\\ReviewList.jsx",
+              "RelativeDocumentMoniker": "watchlist.client\\src\\Components\\ReviewList.jsx",
+              "ToolTip": "C:\\Users\\Vladislav\\Documents\\GitHub\\Watchlist\\Watchlist\\watchlist.client\\src\\Components\\ReviewList.jsx",
+              "RelativeToolTip": "watchlist.client\\src\\Components\\ReviewList.jsx",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-09-30T13:11:02.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T10:40:12.609Z"
             }
           ]
         }

@@ -27,7 +27,7 @@ namespace Watchlist.Server.Controllers
 
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<ReviewDto>))]
-        public IActionResult GetReviewsOfMovie(int movieId)
+        public IActionResult GetReviewsOfMovie([FromBody] int movieId)
         {
             var reviews = reviewRepository.GetMediaItemReviews(movieId);
             var revieDtos = mapper.Map<List<ReviewDto>>(reviews);
